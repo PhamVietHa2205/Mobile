@@ -18,13 +18,13 @@ class Category {
   }
 }
 
-String findCategoryName(int id, List<Category> listCategory) {
+String? findCategoryName(int id, List<Category> listCategory) {
   for (int i = 0; i < listCategory.length; i++) {
     if (listCategory[i].id == id) {
       return listCategory[i].name;
     }
   }
-  return "No name in category list";
+  return null;
 }
 
 class MappedProduct {
@@ -32,7 +32,7 @@ class MappedProduct {
   late int price;
   late int quality;
   late int categoryId;
-  late String categoryName;
+  late String? categoryName;
   MappedProduct(
       this.name, this.price, this.quality, this.categoryId, this.categoryName);
   String toString() {

@@ -13,8 +13,6 @@ class Queu {
   }
 
   void push(String data) {
-    if (rear == max - 1) {
-    } else {
       this.rear++;
       if (this.data.length >= 0 && rear < this.data.length)
         this.data[rear] = data;
@@ -22,7 +20,6 @@ class Queu {
         this.data.add(data);
       }
     }
-  }
 }
 
 void main() {

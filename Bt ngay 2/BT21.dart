@@ -2,7 +2,7 @@ import 'dart:io';
 //recursive
 double calSalary(double salary, int n) {
   if (n == 0) return salary;
-  return calSalary(salary*1.1, n - 1);
+  return 1.1 * calSalary(salary, n - 1);
 }
 //non-recursive
 /* double calSalary(double salary, int n) {
